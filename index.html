@@ -421,7 +421,7 @@
         let particles = [];
 
         const settings = {
-            particleCount: 450, 
+            particleCount: 650, 
             speedMultiplier: 0.3, 
             direction: 'mixed' 
         };
@@ -501,8 +501,8 @@
             // --- Configuration from CSS Variables ---
             // We parse the CSS variables to keep timings consistent between CSS and JS
             const rootStyles = getComputedStyle(document.documentElement);
-            const animationDuration = parseFloat(rootStyles.getPropertyValue('--animation-duration')) * 1000;
-            const displayDuration = parseFloat(rootStyles.getPropertyValue('--display-duration')) * 1000;
+            const animationDuration = parseFloat(rootStyles.getPropertyValue('--animation-duration')) * 500;
+            const displayDuration = parseFloat(rootStyles.getPropertyValue('--display-duration')) * 500;
 
             let currentIndex = 0;
 
